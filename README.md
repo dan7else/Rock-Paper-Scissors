@@ -6,4 +6,4 @@ A classic command-line game where you play Rock, Paper, Scissors against the com
 1. Make sure you have Python installed (version 3.6 or higher).
 2. Open your terminal and run the script:
    ```bash
-   game.py
+   python game.py
