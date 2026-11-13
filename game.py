@@ -1,24 +1,22 @@
 import random
 
-choices = ["камень", "ножницы", "бумага"]
-print("Ку, сыграем?")
-print("камень, ножницы, бумага")
+choices = ["rock", "paper", "scissors"]
+print("Yo, let's play!")
+print("rock, paper, scissors")
 
-user = input("Твой выбор: ").lower()
+user = input("Your choice: ").lower()
 
 if user not in choices:
-    print("Ты что то не то ввел, игра окончена")
+    print("Wrong input, game over.")
 else:
     computer = random.choice(choices)
-    print(f"Компьютер выбрал: {computer} ")
-
+    print(f"Computer chose: {computer}")
+    
     if user == computer:
-        print("Победила, дружбаа")
-        
-    elif (user == "камень" and computer == "ножницы")or \
-         (user == "ножницы" and computer =="бумага")or \
-         (user == "бумага" and computer == "камень"):
-         print("Ты выиграл блин")
+        print("Draw, friendship won!")
+    elif (user == "rock" and computer == "scissors") or \
+         (user == "scissors" and computer == "paper") or \
+         (user == "paper" and computer == "rock"):
+        print("You win!")
     else:
-        print("Проиграл, попробуй еще раз!")
-
+        print("You lose, try again!")
